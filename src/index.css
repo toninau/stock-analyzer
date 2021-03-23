@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #e3e3e3;
+}
+
+.inputfile {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+  margin: 2em;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: #3185FC;
+  display: inline-block;
+  cursor: pointer;
+  padding: 1em;
+  border: 2px solid #046bfb;
+}
+
+.inputfile + label:hover {
+  background-color: #4f97fc;
+  transition: background-color 0.75s;
+}
+
+.option-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2B2B2B;
+}
+
+.option-bar > button {
+  padding: 1em 1.5em;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  flex: 1 1 0px;
+  color: #FFFFFF;
+  border-bottom: 2px solid transparent;
+}
+
+.option-bar > button:hover {
+  color: #FF5376;
+}
+
+.option-bar > button#active {
+  color: #FF5376;
+  border-bottom: 2px solid #FF5376;
+}
+
+.date-range {
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.date-range > p {
+  text-align: center;
+  font-weight: 700;
+}
+
+.date-range > * {
+  margin: 0.5em 0;
+}
+
+.date-range__pickers {
+  display: flex;
+  flex-direction: row;
+}
+
+.date-range__pickers > input {
+  margin: 0 1em;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.table thead {
+  border-bottom: 1px solid #e3e3e3;
+  color: #353535;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #e3e3e3;
+}
+
+.table th, td {
+  text-align: center;
+  padding: 5px;
+}
+
+.upward-trend {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#error {
+  color: red;
+}
